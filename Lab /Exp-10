@@ -1,0 +1,13 @@
+sentence = input("Enter sentence: ").split()
+
+tags = []
+
+for word in sentence:
+    tag = "NOUN"
+    if word.endswith("ing"):
+        tag = "VERB"
+    tags.append((word, tag))
+
+print("Tagged Sentence:")
+for word, tag in tags:
+    print(word, "->", tag)
