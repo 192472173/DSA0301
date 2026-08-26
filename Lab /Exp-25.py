@@ -1,6 +1,6 @@
 from openai import OpenAI
 
-client = OpenAI(api_key="YOUR_API_KEY")
+client = OpenAI(api_key="api key")
 
 prompt = input("Enter prompt: ")
 
